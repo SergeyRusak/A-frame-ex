@@ -1,0 +1,52 @@
+Полезные ссылки:
+https://aframe.io/docs/1.3.0/introduction/ - документация Aframe
+https://ar-js-org.github.io/AR.js-Docs/#arjs-augmented-reality-on-the-web - документация ar.js
+https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html - создание своих маркеров
+
+
+
+Подгружаем библиотеки:
+~~~
+<script src="https://aframe.io/releases/(номер актуальной версии)/aframe.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+~~~
+
+Основная структура:
+~~~
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+    	<a-assets>
+    
+ 		</a-assets>
+    	<a-marker>
+
+
+
+
+    	</a-marker>
+    	<a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
+~~~
+
+Списов полезных тегов:
+<a-box> </a-box> - Куб
+<a-cylinder> </a-cylinder> - Цилиндр
+<a-plane> </a-plane> - Плоскость
+<a-sphere> </a-sphere> - Шар
+<a-image> </a-image> - Изображение
+<a-entity text= ""></a-entity> - Текст
+<a-entity glf-model="#example"> </a-entity> - Объект со своей моделью
+
+
+Список атрибутов для большинства тегов:
+color - цвет объекта
+depth,height,width - длинна, высота и ширина объекта
+scale - размеры объекта (тоже самое что верхнее, но одним атрибутом)
+rotation - поворот объекта
+position - положение объекта
